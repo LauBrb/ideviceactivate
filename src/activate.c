@@ -39,7 +39,7 @@ typedef struct {
 	char* iccid;
 	char* serial_number;
 	char* activation_info;
-} activate_info;
+;
 
 size_t activate_write_callback(char* data, size_t size, size_t nmemb, activate_response* response) {
 	size_t total = size * nmemb;
@@ -386,5 +386,8 @@ int do_activation(lockdownd_client_t client, plist_t activation_record)
 	}
 
 	//plist_free(activation_record);
-	activation_record = NULL;
+	activation_record = NUL
+	
+	L;
+
 }
